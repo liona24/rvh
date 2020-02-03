@@ -1,0 +1,19 @@
+{
+    "name": "path-edit-dev",
+    "dockerFile": "Dockerfile",
+    "runArgs": [
+        "-u", "vscode",
+
+        "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"
+    ],
+    "settings": {
+        "lldb.executable": "/usr/bin/lldb",
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "hdevalke.rust-test-lens",
+        "rust-lang.rust",
+        "vadimcn.vscode-lldb",
+        "bungcip.better-toml"
+    ]
+}
